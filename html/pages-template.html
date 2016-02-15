@@ -1,0 +1,41 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<div id="main">
+    <div class="toparea">
+        <div id="topbanner">
+            <eSeller:Container ContainerName="topPane" ContainerType="TopBanner" CssId="#topbanner" AllowShopElements="True"></eSeller:Container>
+        </div>
+        <div class="right-top">
+            <eSeller:Container ContainerName="right-top" CssId=".right-top" AllowShopElements="True"/>
+        </div>
+    </div>
+    <div id="content">
+        <div class="left-menu">
+            <eSeller:Container ContainerName="left-menu" CssId=".left-menu" AllowShopElements="True"/>
+        </div>
+        <div class="contentPane">
+            <eSeller:Content ContainerName="content" CssId="#content .contentPane" />
+        </div>
+        <div class="right-menu">
+            <eSeller:Container ContainerName="right-menu" CssId=".right-menu" AllowShopElements="True"/>
+        </div>
+    </div>
+    <div id="bottom">
+        <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="False" />
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+
+        if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
+
+        }
+        else {
+            $('#BasketdetailedBox').css('background-color', '#5db95d');
+        }
+
+    });
+
+</script>
