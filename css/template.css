@@ -1,1 +1,62 @@
 /*** For all the global styles on DAY ***/
+
+/*** template container placements ***/
+
+body {
+    background-image: url('/images/editor/layout-images/body_bg.jpg') !important;
+    background-repeat: repeat-x !important;
+    background-color: #e1ded9;
+}
+
+.toparea > div,
+.toparea .right-top > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.toparea #topbanner {
+    width: 417px;
+}
+
+.toparea #topbanner > div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55px !important;
+}
+
+.toparea #topbanner > div img {
+    height: 55px !important;
+    width: 100% !important;
+}
+
+.toparea .right-top {
+    width: 570px;
+}
+
+/*** shopelements in toparea ***/
+
+.right-top > div > h2 {
+    display: none !important;
+}
+
+#infoMenu2bdy li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#infoMenu2bdy li a,
+.search-dropdown {
+    color: #222222;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    display: block;
+}
+
+.ese71.ese {
+    float:right;
+}
+
+#SearchBox {
+    display: none;
+}
