@@ -1,0 +1,45 @@
+<div id="loginPage">
+    <div class="slider-box">
+        <div class="slider-box-inner">
+            <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;login-slider&quot;)" />
+        </div>
+    </div>
+    <div class="login-box">
+        <div id="cmsLoginPage" class="cms-box">
+            <eSeller:select value-of="CmsSpecialPages:GetPage(&quot;LoginPage&quot;).CMSSpecialPageContent" />
+        </div>
+        <eSeller:if istrue="Settings:IsCustomerLoginEnabled">
+            <div id="customerLogin">
+                <eSeller:Control ControlID="customerLogin" ControlType="customerLogin" />
+            </div>
+        </eSeller:if>
+        <eSeller:if istrue="Settings:IsSalespersonLoginEnabled">
+            <div id="salesPersonLogin">
+                <eSeller:Control ControlID="SalesPersonLogin" ControlType="SalesPersonLogin" />
+            </div>
+        </eSeller:if>
+    </div>
+</div>
+
+<script type="text/javascript" src="/images/editor/slick-slider/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#loginPage .slider-box-inner').slick({
+            dots: true,
+            infinite: true,
+            speed: 750,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            cssEase: 'linear'
+        });
+    });
+
+    var getLinks = $('#customerLogin td ul').remove().clone();
+    $('#customerLogin .button').prepend(getLinks);
+
+    var getUCmsg = $('#ucInfoMessagebdy').remove().clone();
+    $('#cmsLoginPage').append(getUCmsg);
+
+</script>
