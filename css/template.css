@@ -464,7 +464,8 @@ body {
   margin-bottom:30px;
 }
 
-#BasketdetailedBoxbdy input[type="button"]{
+#BasketdetailedBoxbdy input[type="button"], 
+#ShopContent .etBasket a{
   border:0;
   color:#fff;
   display:block;
@@ -824,4 +825,17 @@ body {
 
 .product-detail  .etBasket{
 	float: right;
+}
+
+.product-detail  .etBasket img{
+	display: none !important;
+}
+
+
+.product-detail  .etBasket a{
+	display: block;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px !important; 
+	height: 38px !important;
 }

@@ -35,7 +35,9 @@
 			$(this).text(splitPrice[1]);
 		});
         var statusTest=$('.legendInstockTxt').text();
-		$('#etStockStatusProduct').append(statusTest)
+		$('#etStockStatusProduct').append(statusTest);
+		$('.product-detail .etBasket a').text('Add to Basket');
+		
         if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
 
         }
