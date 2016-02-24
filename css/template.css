@@ -376,17 +376,104 @@ body {
     background-color: #fff;
     margin: 10px 10px 0 0;
     min-height: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 #content > div.right-menu {
     margin: 10px 0 0 10px;
 }
 
-#content img {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: auto !important;
+
+/* Left Menu */
+
+
+.left-menu h2.eseh2 {
+  font-size:17px;
+  font-family:Georgia, serif;
+}
+
+.star-menu{
+  margin-top:15px;
+}
+
+#pMenuToplevel.ese{
+  margin-bottom:20px;
+}
+
+#pMenuSublevels{
+  border-top:1px solid #f4f4f4;
+  padding-top:15px;
+}
+
+#pMenuSublevelsl1 li a,
+#pMenuToplevell0 li a{
+  color:#222222;
+  font-family:Georgia,serif;
+  font-size:14px;
+  line-height:22px;
+  text-transform:uppercase;
+}
+
+#pMenuSublevelsl1 li a:before,
+#pMenuSublevelsl1 li a:after,
+#pMenuToplevell0 li a:before,
+#pMenuToplevell0 li a:after{
+  content:'-';
+}
+
+/* Right Menu: Basket */
+
+.logicaordertype{
+  margin-top:15px;
+}
+
+#BasketdetailedBoxbdy,
+#BasketdetailedBoxbdy a{
+  font-family:Georgia, serif;
+  font-size:12px;
+}
+
+#BasketdetailedBoxbdy .rowEven,
+#BasketdetailedBoxbdy .rowOdd{
+  display:block !important;
+  padding:8px 0;
+}
+
+#BasketdetailedBoxbdy .c1,
+#BasketdetailedBoxbdy .c2{
+  display:block;
+  float:none !important;
+}
+
+#BasketdetailedBoxbdy .footer .c1,
+#BasketdetailedBoxbdy .footer .c2{
+  font-family:Georgia, serif;
+  font-size:14px;
+  font-weight:bold;
+}
+
+#BasketdetailedBoxbdy .footer{
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+#BasketdetailedBoxbdy input[type="button"]{
+  border:0;
+  color:#fff;
+  display:block;
+  font-family:Georgia, serif;
+
+  height:30px;
+  margin:15px 10px 0;
+  text-transform: uppercase;
+  width:135px;
+
+  background: #666666; /* Old browsers */
+  background: -moz-linear-gradient(top,  #666666 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #666666 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #666666 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
 }
 
 /*** Login page styles ***/
@@ -618,7 +705,7 @@ body {
 	display: none;
 }
 
-#main .prbasket  .prbpri:first-child, 
+#main .prbasket  .prbpri:first-child,
 #main .prbasket .prlpri{
 	display: none;
 }
