@@ -34,7 +34,8 @@
 			var splitPrice=valuePrice.split('Price: ');
 			$(this).text(splitPrice[1]);
 		});
-        
+        var statusTest=$('.legendInstockTxt').text();
+		$('#etStockStatusProduct').append(statusTest)
         if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
 
         }
