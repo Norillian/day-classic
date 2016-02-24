@@ -382,7 +382,7 @@ body {
 #content > div.right-menu {
     margin: 10px 0 0 10px;
 }
-<<<<<<< HEAD
+
 /*
 #content img {
     max-width: 100% !important;
@@ -495,9 +495,8 @@ body {
 
 .prspacer{
   display:none;
->>>>>>> origin/master
 }
-*/
+
 
 /*** Login page styles ***/
 
@@ -750,7 +749,6 @@ body {
 .page-custom #precontentContainer{
 	display: none;
 }
-<<<<<<< HEAD
 
 #main #ShopContent .product-content #etHeading  .HeaderBarTables{
 	width: auto;	
@@ -827,5 +825,3 @@ body {
 .product-detail  .etBasket{
 	float: right;
 }
-=======
->>>>>>> origin/master
