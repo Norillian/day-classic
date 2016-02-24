@@ -601,3 +601,28 @@ body {
 #BasketdetailedBox .logicaordertypevalue {
     margin: 0 0 10px;
 }
+
+#main .plist560 .plistE6 .prmain{
+	height: auto !important;
+}
+
+
+#main .prmain  a.hlink{
+	color: #222222 !important;
+	font-weight: bold;
+	font-size: 13px  !important;
+	display: block;
+}
+
+#main .prmain p{
+	display: none;
+}
+
+#main .prbasket  .prbpri:first-child, 
+#main .prbasket .prlpri{
+	display: none;
+}
+
+.page-custom #precontentContainer{
+	display: none;
+}
