@@ -476,6 +476,20 @@ body {
 
 }
 
+/* PRODUCT LIST */
+#main .plist560 .plistE6 .prelement{
+  min-width:25% !important;
+  width:25% !important;
+}
+
+.plistE6{
+  width:100%;
+}
+
+.prspacer{
+  display:none;
+}
+
 /*** Login page styles ***/
 
 #main.login-page {
@@ -698,16 +712,30 @@ body {
 	color: #222222 !important;
 	font-weight: bold;
 	font-size: 13px  !important;
+  font-family:Georgia, serif !important;
 	display: block;
 }
 
+#main .plist560 .plistE6 .primg{
+  height:190px;
+}
+
 #main .prmain p{
+  color:#222222 !important;
 	display: none;
+  font-family:Georgia, serif !important;
 }
 
 #main .prbasket  .prbpri:first-child,
 #main .prbasket .prlpri{
 	display: none;
+}
+
+#main .plist560 .plistE6 .prbasket p{
+  color:#222222;
+  font-family:Georgia, serif !important;
+  font-size:13px !important;
+  font-weight:normal !important;
 }
 
 .page-custom #precontentContainer{
