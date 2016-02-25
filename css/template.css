@@ -469,7 +469,8 @@ body {
 .basket-step1 input.buttonNavNext,
 .basket-step1 input.buttonNavPrev,
 .basket-step1 input.buttonClearBasket,
-.basket-step1 input.buttonUpdateBasket {
+.basket-step1 input.buttonUpdateBasket, 
+{
     border: 0;
     color: #fff;
     display: inline-block;
@@ -667,7 +668,8 @@ body {
 }
 
 #BasketdetailedBoxbdy input[type="button"],
-#ShopContent .etBasket a{
+#ShopContent .etBasket a, 
+.page-custom  #ShopContent  input[type="submit"]{
   border:0;
   color:#fff;
   display:block;
@@ -683,7 +685,10 @@ body {
   background: -webkit-linear-gradient(top,  #666666 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #666666 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
 
+.page-custom  #ShopContent  input[type="submit"]{
+	margin: 0 auto;
 }
 
 /* PRODUCT LIST */
@@ -1106,4 +1111,42 @@ body {
 #main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img{
 	margin: -1px 0 0 7px;
 	display: none;
+}
+.page-custom  #ShopContent table{
+	padding: 0 0 0 15px;
+}
+
+.page-custom  #ShopContent table td{
+	color: #222222;
+	font-size: 14px;
+	padding: 0 0 6px 0;
+}
+.page-custom  #ShopContent table td.content strong{
+	padding: 15px 0 0 0;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+.page-custom  #ShopContent table td input, 
+.page-custom  #ShopContent table td select{
+	border: 1px solid #e1ded9 !important;
+	width: 214px !important ;
+	height: 21px !important;
+	line-height: 21px !important;
+	color: #222222;
+	font-size: 12px;
+	padding: 0 0 0 10px;
+}
+
+.page-custom  #ShopContent table td select{
+	width: 225px !important ;
+}
+
+.page-custom  #ShopContent h3.customEdit{
+	color: #222222;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: Georgia;
+	padding: 15px 0 0 15px;
+	margin: 0;
 }
