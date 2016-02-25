@@ -1,0 +1,53 @@
+<div class="frontpage-cms">
+    <div class="cms-content day-2ndday-et remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;day-2ndday-et&quot;)" />
+    </div>
+    <div class="cms-content day-2ndday remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;day-2ndday&quot;)" />
+    </div>
+    <div class="cms-content day-et remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;day-et&quot;)" />
+    </div>
+    <div class="cms-content 2ndday-et remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;2ndday-et&quot;)" />
+    </div>
+    <div class="cms-content day remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;day&quot;)" />
+    </div>
+    <div class="cms-content 2ndday remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;2ndday&quot;)" />
+    </div>
+    <div class="cms-content et remove">
+        <eSeller:Select Value-Of="CmsSpecialPages:Text(&quot;et&quot;)" />
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+    var orderCurrentBrands = "";
+    $('.brand-access-div input').removeClass('main');
+
+    if($('.brand-access-div input').hasClass('day')) {
+        orderCurrentBrands = "day"
+    }
+
+    if($('.brand-access-div input').hasClass('2ndday')) {
+        if(orderCurrentBrands.length > 0) {
+            orderCurrentBrands += "-";
+        }
+        orderCurrentBrands += "2ndday"
+    }
+
+    if($('.brand-access-div input').hasClass('et')) {
+        if(orderCurrentBrands.length > 0) {
+            orderCurrentBrands += "-";
+        }
+        orderCurrentBrands += "et"
+    }
+
+    $('.frontpage-cms .cms-content.'+ orderCurrentBrands +'').removeClass('remove').addClass('active');
+    $('.frontpage-cms .cms-content.remove').remove();
+
+//]]>
+</script>

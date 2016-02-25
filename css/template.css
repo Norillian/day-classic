@@ -370,21 +370,26 @@ body {
 
 #content > div.contentPane {
     width: 656px;
-    margin-top: 10px;
     background-color: #fff;
+}
+
+#content.frontpage > div.contentPane {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
 }
 
 #content > div.left-menu,
 #content > div.right-menu {
     width: 154px;
     background-color: #fff;
-    margin: 10px 10px 0 0;
+    margin: 0px 10px 0 0;
     min-height: 10px;
     text-align: center;
 }
 
 #content > div.right-menu {
-    margin: 10px 0 0 10px;
+    margin: 0px 0 0 10px;
 }
 
 /*** brand banner ***/
@@ -411,6 +416,41 @@ body {
     width: auto !important;
 }
 
+/*** frontpage-cms ***/
+
+.frontpage-cms .cms-content {
+    display: none;
+}
+
+.frontpage-cms .cms-content.active {
+    display: block;
+}
+
+.frontpage-cms .cms-content {
+    width: 100%;
+}
+
+.frontpage-cms .cms-content > div {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    width: 490px;
+    margin-bottom: 10px;
+}
+
+.frontpage-cms .cms-content > div.wide-banner {
+    display: block;
+    width: 100%;
+}
+
+.frontpage-cms .cms-content > div.left-bottom {
+    margin-right: 10px;
+}
+
+.frontpage-cms .cms-content > div .cms-content-inner {
+    padding: 10px;
+}
+
 /*
 #content img {
     max-width: 100% !important;
@@ -428,6 +468,10 @@ body {
 
 .star-menu{
   margin-top:15px;
+}
+
+#pMenuToplevel {
+    display: none;
 }
 
 #pMenuToplevel.ese{
