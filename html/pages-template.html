@@ -21,16 +21,16 @@
             <eSeller:Container ContainerName="right-menu" CssId=".right-menu" AllowShopElements="True"/>
         </div>
     </div>
-    <div id="bottom">
-        <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="False" />
-    </div>
+</div>
+<div id="bottom">
+    <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="False" />
 </div>
 
 <script type="text/javascript">
 
     $( document ).ready(function() {
 		$(".plistAreaHeader  p.prpri").each(function(){
-			var valuePrice=$(this).text();			
+			var valuePrice=$(this).text();
 			var splitPrice=valuePrice.split('Price: ');
 			$(this).text(splitPrice[1]);
 		});
@@ -39,7 +39,7 @@
 		$('.product-detail .etBasket a').text('Add to Basket');
 		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').attr('src', '/images/editor//upload-img.png');
 		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').show();
-		
+
         if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
 
         }
