@@ -1,0 +1,18 @@
+<div class="brand-banner">
+    <a class="day-logo remove" href="/pl/Day_15741.aspx"><img src="/images/editor/layout-images/day-logo.png" alt="day" /></a>
+    <a class="2ndday-logo remove" href="/pl/2NDDAY_15635.aspx"><img src="/images/editor/layout-images/2ndday-logo.png" alt="2ndday" /></a>
+    <a class="et-logo remove" href="/pl/DAY-et_15637.aspx"><img src="/images/editor/layout-images/et-logo.png" alt="et" /></a>
+</div>
+
+<script type="text/javascript">
+    if($('.brand-access-div input').hasClass('day')) {
+        $('.day-logo').addClass('active').removeClass('remove');
+    }
+    if($('.brand-access-div input').hasClass('et')) {
+        $('.et-logo').addClass('active').removeClass('remove');
+    }
+    if($('.brand-access-div input').hasClass('2ndday')) {
+        $('.2ndday-logo').addClass('active').removeClass('remove');
+    }
+    $('.brand-banner a.remove').remove();
+</script>

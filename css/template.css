@@ -344,6 +344,10 @@ body {
     width: 417px;
 }
 
+#topbanner > div {
+    background-image: none !important;
+}
+
 .toparea #topbanner > div {
     background-size: contain;
     background-repeat: no-repeat;
@@ -383,13 +387,36 @@ body {
     margin: 10px 0 0 10px;
 }
 
+/*** brand banner ***/
+
+.brand-banner {
+    width: 100%;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.brand-banner a {
+    vertical-align: middle;
+    margin-right: 50px;
+    padding: 0px;
+    display: none;
+}
+
+.brand-banner a.active {
+    display: inline-block;
+}
+
+.toparea #topbanner .brand-banner a img {
+    height: auto !important;
+    width: auto !important;
+}
+
 /*
 #content img {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
 =======
-
 
 /* Left Menu */
 
