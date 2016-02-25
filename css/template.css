@@ -458,6 +458,136 @@ body {
     height: auto !important;
 =======
 
+/*** Basket step 1 ***/
+
+.basket-step1 {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.basket-step1 input.buttonNavNext,
+.basket-step1 input.buttonNavPrev,
+.basket-step1 input.buttonClearBasket,
+.basket-step1 input.buttonUpdateBasket {
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Georgia, serif;
+    height: 30px;
+    margin: 10px 0px 0;
+    text-transform: uppercase;
+    width: 150px;
+    font-weight: normal;
+    font-size: 12px;
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%,#000000 100%);
+    background: linear-gradient(to bottom, #666666 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 );
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.basket-step1 input.buttonNavPrev,
+.basket-step1 input.buttonClearBasket,
+.basket-step1 input.buttonUpdateBasket  {
+    background: #999999;
+    background: -moz-linear-gradient(top, #999999 0%, #666666 100%);
+    background: -webkit-linear-gradient(top, #999999 0%,#666666 100%);
+    background: linear-gradient(to bottom, #999999 0%,#666666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 );
+    width: 160px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.basket-step1 input.buttonNavNext {
+    margin: 0;
+}
+
+.basket-step1 input.buttonNavPrev {
+    margin-bottom: 10px;
+}
+
+.basket-step1 #ec32 .ec32Head td {
+    background-color: #fff;
+    border-bottom: solid 1px #f1f0f0;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px !important;
+}
+
+.basket-step1 #ec32 .c8 {
+    text-align: right;
+}
+
+.basket-step1 #ec32 .c9 {
+    text-align: center;
+}
+
+.basket-step1 #ec32 .c5 input {
+    width: 40px;
+    text-align: center;
+}
+
+.basket-step1 #ec32 .dgItem,
+.basket-step1 #ec32 .dgAlte {
+    border-bottom: solid 1px #f1f0f0;
+}
+
+.basket-step1 h2 {
+    margin: 0px 0 0px 0;
+}
+
+.basket-step1 h2 b {
+    color: #222222;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 0px 0;
+    display: block !important;
+    font-family: Georgia;
+}
+
+/*** basket-step2 ***/
+
+.basket-step2 {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.basket-step2 input.buttonNavPrev,
+.basket-step2 input.buttonNavNext {
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Georgia, serif;
+    height: 30px;
+    margin: 10px 0px 0;
+    text-transform: uppercase;
+    width: 150px;
+    font-weight: normal;
+    font-size: 12px;
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #666666 0%,#000000 100%);
+    background: linear-gradient(to bottom, #666666 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 );
+    cursor: pointer;
+}
+
+/*** basket-step3 ***/
+
+.basket-step3 {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.basket-step2 #table1,
+.basket-step3 #table1 {
+    display: none;
+}
+
 /* Left Menu */
 
 
