@@ -464,7 +464,7 @@ body {
   margin-bottom:30px;
 }
 
-#BasketdetailedBoxbdy input[type="button"], 
+#BasketdetailedBoxbdy input[type="button"],
 #ShopContent .etBasket a{
   border:0;
   color:#fff;
@@ -665,8 +665,28 @@ body {
     float:right;
 }
 
-#SearchBox {
-    display: none;
+/* Search Box */
+#main{
+  position:relative;
+}
+
+#main #SearchBox {
+  background:#fff;
+  border:1px solid #e1ded9;
+  display: none;
+  margin-top:0 !important;
+  padding:17px;
+  position:absolute;
+  right:0;
+  top:55px;
+}
+
+#main #SearchBox.active{
+  display:block;
+}
+
+#main #SearchBoxbdy input.textbox{
+  width:300px !important;
 }
 
 /*** Back to homepage link ***/
@@ -752,7 +772,7 @@ body {
 }
 
 #main #ShopContent .product-content #etHeading  .HeaderBarTables{
-	width: auto;	
+	width: auto;
 	padding: 0;
 	margin: 0;
 }
@@ -836,6 +856,6 @@ body {
 	display: block;
 	text-align: center;
 	line-height: 38px;
-	font-size: 16px !important; 
+	font-size: 16px !important;
 	height: 38px !important;
 }
