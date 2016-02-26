@@ -8,8 +8,8 @@
     cursor:pointer;
 }
 
-.ec32Table td, .content span, .content a{
-    font-family: 'Quattrocento Sans', sans-serif !important;
+.ec32Table td, .content span, .content a, .ec54Table td{
+    font-family: Georgia, serif !important;
     font-size: 12px !important;
 }
 
@@ -33,26 +33,13 @@
 }
 
 .tblPaymentAddress td{
-    font-family: 'Quattrocento Sans', sans-serif !important;
-    font-size: 12px !important;
-    padding-right: 5px;
-}
-
-.tblPaymentAddress td{
-    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-family: Georgia, serif !important;
     font-size: 12px !important;
     padding-right: 5px;
 }
 
 .tblPaymentAddress input{
-    font-family: 'Quattrocento Sans', sans-serif !important;
-    font-size: 12px !important;
-    padding: 1px 2px 1px 1px;
-    width: 200px;
-}
-
-.tblPaymentAddress input{
-    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-family: Georgia, serif !important;
     font-size: 12px !important;
     padding: 1px 2px 1px 1px;
     width: 200px;
@@ -95,4 +82,3 @@
     font-size: 14px;
     color:#000000;
 }
-

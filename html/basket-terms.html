@@ -1,21 +1,33 @@
 <div class="basket-step2">
-<eSeller:If IsFalse="Basket:IsEmpty">
-<div style="margin-top: 5px;">
-<eSeller:Control ControlType="CheckoutProgressIndicator" ControlId="CheckoutProgressIndicator" /></div>
-<table width="100%"><tr><td align="left">
-<eSeller:Control ControlType="BasketActionButton" ControlId="PreviousStep" Mode="NavigatePrevious" CssClass="buttonNavPrev" />
-</td>
-<td align="right">
-<eSeller:Control ControlType="AcceptTerms" ControlId="AcceptTerms" CssClass="checkbox" LabelCssClass="labelForCheckbox" />&amp;nbsp;
-<eSeller:Control ControlType="BasketActionButton" ControlId="NextStep" Mode="NavigateNext" CssClass="buttonNavNext"
-CausesValidation="True" >
-<eSeller:Attribute Name="Text" Text="button_next(accept)" />
-</eSeller:Control>
-</td></tr></table>
-<eSeller:select value-of="CmsSpecialPages:GetPage(&quot;SalesAndDeleveryTerms&quot;).CMSSpecialPageContent" />
-<eSeller:select value-of="CmsSpecialPages:Text(&quot;Terms&quot;)" />
+  <eSeller:If IsFalse="Basket:IsEmpty">
 
-<!--
+    <div class="basket-header">
+      <eSeller:Control ControlType="CheckoutProgressIndicator" ControlId="CheckoutProgressIndicator" />
+      <h1 class="basket-header"><eSeller:Select Text="label_page_terms_of_sales_and_delivery" /></h1>
+    </div>
+
+    <div class="basket-content-terms">
+      <eSeller:select value-of="CmsSpecialPages:GetPage(&quot;SalesAndDeleveryTerms&quot;).CMSSpecialPageContent" />
+      <eSeller:select value-of="CmsSpecialPages:Text(&quot;Terms&quot;)" />
+    </div>
+
+    <div class="basket-navigation">
+
+      <div class="basket-navigation-left">
+        <eSeller:Control ControlType="BasketActionButton" ControlId="PreviousStep" Mode="NavigatePrevious" CssClass="button-nav-previous" />
+      </div>
+
+      <div class="basket-navigation-right">
+        <eSeller:Control ControlType="AcceptTerms" ControlId="AcceptTerms" CssClass="checkbox" LabelCssClass="labelForCheckbox" />&amp;nbsp;
+        <eSeller:Control ControlType="BasketActionButton" ControlId="NextStep" Mode="NavigateNext" CssClass="button-nav-next" CausesValidation="True">
+          <eSeller:Attribute Name="Text" Text="button_next(accept)" />
+        </eSeller:Control>
+      </div>
+
+    </div>
+
+
+    <!--
 <table width="100%"><tr><td align="left">
 <eSeller:Control ControlType="BasketActionButton" ControlId="PreviousStep2" Mode="NavigatePrevious" CssClass="buttonNavPrev" />
 </td>
@@ -25,15 +37,16 @@ CausesValidation="True" >
 CausesValidation="True" />
 </td></tr></table>
 -->
-</eSeller:If>
+  </eSeller:If>
 
-<eSeller:If IsTrue="Basket:IsEmpty">
-<div style="text-align: center">
-    <eSeller:Select AppText="basket_is_empty" /><br />
-    <eSeller:Control ControlType="NavigateButton" ControlId="JumpOutButton" Command="Frontpage" CssClass="buttonNavPrev" >
-      <eSeller:Attribute Name="Text" AppText="Navigate_goto_frontpage" />
-    </eSeller:Control>
+  <eSeller:If IsTrue="Basket:IsEmpty">
+    <div style="text-align: center">
+      <eSeller:Select AppText="basket_is_empty" />
+      <br />
+      <eSeller:Control ControlType="NavigateButton" ControlId="JumpOutButton" Command="Frontpage" CssClass="buttonNavPrev">
+        <eSeller:Attribute Name="Text" AppText="Navigate_goto_frontpage" />
+      </eSeller:Control>
 
-</div>
-</eSeller:If>
+    </div>
+  </eSeller:If>
 </div>

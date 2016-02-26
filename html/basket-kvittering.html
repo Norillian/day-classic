@@ -1,0 +1,63 @@
+<eSeller:Data DataType="OrderHead" DataId="Order" IsOrderConfirmation="True" NotFoundYields403="true" />
+<div class="basket-step5">
+
+  <div class="basket-header">
+    <eSeller:Select Text="text_confirmation" />
+  </div>
+
+  <div class="basket-content-receipt">
+    <div class="basket-payment-address">
+
+      <h4 class="basket-delivery-header">
+        <eSeller:Select Text="label_invoice_head" TextSourceControlId="Betalingsadresse" />
+      </h4>
+      <eSeller:Control ControlId="Betalingsadresse" ControlType="OrderPaymentAddress" DataSourceId="Order" />
+
+    </div>
+
+    <div class="basket-delivery-address">
+
+      <h4 class="basket-delivery-header">
+        <eSeller:Select Text="label_delivery_head" TextSourceControlId="Leveringsadresse" />
+      </h4>
+      <eSeller:If IsTrue="Data_Order:IsShipmentAddressSpecified">
+        <eSeller:Control ControlId="Leveringsadresse" ControlType="OrderShipmentAddress"  DataSourceId="Order" />
+      </eSeller:If>
+      <eSeller:If IsFalse="Data_Order:IsShipmentAddressSpecified">
+        <eSeller:Select Text="label_delivery_not_specified" TextSourceControlId="Leveringsadresse"/>
+      </eSeller:If>
+
+    </div>
+
+
+    <div class="basket-delivery-method">
+      <h4 class="basket-delivery-header">
+        <eSeller:Select Text="label_delivery_method" TextSourceControlId="Leveringsmåde" />
+      </h4>
+      <eSeller:Control ControlType="OrderShipmentMethod" ControlId="Leveringsmåde" DataSourceId="Order" />
+    </div>
+
+    <div class="basket-payment-method">
+      <h4 class="basket-delivery-header">
+        <eSeller:Select Text="label_payment_method" TextSourceControlId="Betalingsmåde" />
+      </h4>
+      <eSeller:Control ControlType="OrderPaymentMethod" ControlId="Betalingsmåde"  DataSourceId="Order" />
+    </div>
+
+    <div class="basket-order-remarks">
+      <h4 class="basket-delivery-header">
+        <eSeller:Select Text="label_order_remarks" TextSourceControlId="Ordrebemærkning"/>
+      </h4>
+      <eSeller:Control ControlType="OrderOrderingRemarks" ControlId="Ordrebemærkning"  DataSourceId="Order"  />
+    </div>
+
+    <eSeller:Control ControlId="Ordrelinjer" ControlType="OrderDetails" DataSourceId="Order" CanReOrder="False" />
+
+    <div class="basket-total basket-total-overview">
+      <eSeller:Control ControlId="Totaler" ControlType="OrderTotals" DataSourceId="Order" />
+    </div>
+
+  </div>
+
+
+</div>
