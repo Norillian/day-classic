@@ -9,10 +9,15 @@
             <eSeller:Container ContainerName="right-top" CssId=".right-top" AllowShopElements="True"/>
         </div>
     </div>
-    <div id="content" class="frontpage">
-        <div class="contentPane">
+    <div id="content">
+        <div class="left-menu">
+            <eSeller:Container ContainerName="left-menu" CssId=".left-menu" AllowShopElements="True"/>
+
+        </div>
+        <div class="contentPane customer-page">
             <eSeller:Content ContainerName="content" CssId="#content .contentPane" />
         </div>
+
     </div>
 </div>
 <div id="bottom">
@@ -32,6 +37,10 @@
         var statusTest=$('.legendInstockTxt').text();
 		$('#etStockStatusProduct').append(statusTest);
 		$('.product-detail .etBasket a').text('Add to Basket');
+		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').attr('src', '/images/editor//upload-img.png');
+		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').show();
+		$('.page-custom #ShopContent input[type="submit"]').val('SAVE PROFILE');
+
 
         if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
 

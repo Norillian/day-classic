@@ -23,7 +23,9 @@
     </div>
 </div>
 <div id="bottom">
-    <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="False" />
+  <div class="bottom-container">
+    <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="True" />    
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -40,6 +42,7 @@
 		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').attr('src', '/images/editor//upload-img.png');
 		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').show();
 		$('.page-custom #ShopContent input[type="submit"]').val('SAVE PROFILE');
+
 
         if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
 
