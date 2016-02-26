@@ -1271,19 +1271,20 @@ body {
 	padding: 0 0 0 15px;
 }
 
-.page-custom  #ShopContent table td{
-	color: #222222;
-	font-size: 14px;
-	padding: 0 0 6px 0;
+.page-custom  .profile-page table td{
+	color: #222222 !important;
+	font-size: 14px !important;
+	padding: 0 0 6px 0 !important;
+	font-family: Georgia !important;
 }
-.page-custom  #ShopContent table td.content strong{
+.page-custom  .profile-page  table td.content strong{
 	padding: 15px 0 0 0;
 	display: block;
 	font-size: 16px;
 	font-weight: bold;
 }
-.page-custom  #ShopContent table td input,
-.page-custom  #ShopContent table td select{
+.page-custom  .profile-page  table td input,
+.page-custom  .profile-page table td select{
 	border: 1px solid #e1ded9 !important;
 	width: 214px !important ;
 	height: 21px !important;
@@ -1293,11 +1294,11 @@ body {
 	padding: 0 0 0 10px;
 }
 
-.page-custom  #ShopContent table td select{
+.page-custom  .profile-page  table td select{
 	width: 225px !important ;
 }
 
-.page-custom  #ShopContent h3.customEdit{
+.page-custom .profile-page h3.customEdit{
 	color: #222222;
 	font-size: 24px;
 	font-weight: normal;
