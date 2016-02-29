@@ -756,7 +756,7 @@ body {
 }
 
 #pMenuSublevels{
-  border-top:1px solid #f4f4f4;
+  border-top:0px solid #f4f4f4;
   padding-top:15px;
 }
 
@@ -1383,6 +1383,7 @@ body {
   margin-top:10px;
   overflow:hidden;
   padding:10px 10px 30px;
+  display: none;
 }
 
 .must-have-header{
@@ -1424,6 +1425,7 @@ body {
   height:auto !important;
   margin-top:10px;
   overflow:hidden;
+  min-height: 176px;
 }
 
 .bottom-container{
