@@ -393,6 +393,18 @@ body {
     padding-right: 0;
 }
 
+#memberMenuh2 {
+    color: #222222;
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+#memberMenubdy a {
+    color: #222222;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 #content > div.left-menu,
 #content > div.right-menu {
     width: 154px;
