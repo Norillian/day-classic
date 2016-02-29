@@ -374,10 +374,23 @@ body {
     margin-bottom: 10px;
 }
 
+#content.member-menus > div.contentPane {
+    width: 823px;
+}
+
 #content.frontpage > div.contentPane {
     width: 100%;
     margin-bottom: 10px;
     background-color: transparent;
+}
+
+.search-div {
+    width: 149px;
+    text-align: right;
+}
+
+.search-dropdown {
+    padding-right: 0;
 }
 
 #content > div.left-menu,

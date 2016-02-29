@@ -1,0 +1,53 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<div id="main" class="page-custom">
+    <div class="toparea">
+        <div id="topbanner">
+            <eSeller:Container ContainerName="topPane" ContainerType="TopBanner" CssId="#topbanner" AllowShopElements="True"></eSeller:Container>
+        </div>
+        <div class="right-top">
+            <eSeller:Container ContainerName="right-top" CssId=".right-top" AllowShopElements="True"/>
+        </div>
+    </div>
+    <div id="content" class="member-menus">
+        <div class="left-menu">
+            <eSeller:Container ContainerName="left-menu" CssId=".left-menu" AllowShopElements="True"/>
+
+        </div>
+        <div class="contentPane">
+            <eSeller:Content ContainerName="content" CssId="#content .contentPane" />
+        </div>
+    </div>
+</div>
+<div id="bottom">
+  <div class="bottom-container">
+    <eSeller:Container ContainerName="bottomPane" CssId="#bottom" ContainerType="ShopBottom" AllowShopElements="True" />
+  </div>
+</div>
+
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+		$(".plistAreaHeader  p.prpri").each(function(){
+			var valuePrice=$(this).text();
+			var splitPrice=valuePrice.split('Price: ');
+			$(this).text(splitPrice[1]);
+		});
+        var statusTest=$('.legendInstockTxt').text();
+		$('#etStockStatusProduct').append(statusTest);
+		$('.product-detail .etBasket a').text('Add to Basket');
+		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').attr('src', '/images/editor//upload-img.png');
+		$('#main #ShopContent .product-detail #pvmshipmentdate  .basicdatepicker img').show();
+		$('.page-custom #ShopContent input[type="submit"]').val('SAVE PROFILE');
+
+
+        if($('#BasketdetailedBox .c1:contains("0")').length > 0) {
+
+        }
+        else {
+            $('#BasketdetailedBox').css('background-color', '#5db95d');
+        }
+
+    });
+
+</script>
