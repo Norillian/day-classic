@@ -239,7 +239,7 @@
 /* Dots */
 .slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .slick-dots
@@ -456,25 +456,73 @@ body {
     width: 100%;
 }
 
-.frontpage-cms .cms-content > div {
+#ShopContent #contentCmstext {
+    padding: 0;
+}
+
+.frontpage-cms .cms-content > div,
+#contentCmstext > div {
     display: inline-block;
     background-color: #fff;
     text-align: center;
     width: 490px;
     margin-bottom: 10px;
+    vertical-align: top;
 }
 
-.frontpage-cms .cms-content > div.wide-banner {
+.frontpage-cms .cms-content > div.wide-banner,
+#contentCmstext > div.wide-banner {
     display: block;
     width: 100%;
 }
 
-.frontpage-cms .cms-content > div.left-bottom {
+.frontpage-cms .cms-content > div.left-bottom,
+#contentCmstext > div.left-bottom {
     margin-right: 10px;
 }
 
-.frontpage-cms .cms-content > div .cms-content-inner {
+.frontpage-cms .cms-content > div .cms-content-inner,
+#contentCmstext > div .cms-content-inner {
     padding: 10px;
+}
+
+#contentCmstext > div .cms-content-inner {
+    padding: 10px;
+    min-height: 275px;
+}
+
+.frontpage-cms .cms-content > div .cms-content-inner img,
+#contentCmstext > div .cms-content-inner img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+#contentCmstext > div .cms-content-inner h2 {
+    color: #222222 !important;
+    font-size: 24px !important;
+    font-family:Georgia,serif !important;
+    margin: 0;
+    padding: 15px 0 5px 0;
+}
+
+#contentCmstext > div .cms-content-inner {
+    color: #222222;
+    font-size: 18px;
+    font-family:Georgia,serif;
+    line-height: 24px;
+}
+
+#contentCmstext > div .cms-content-inner a {
+    color: #222222 !important;
+    font-size: 18px !important;
+    font-family:Georgia,serif !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+#contentCmstext > div .cms-content-inner a.larger {
+    font-size: 24px !important;
 }
 
 /*
@@ -801,6 +849,10 @@ body {
   content:'-';
 }
 
+#pMenuSublevelsl1 li a.active {
+    font-weight: bold;
+}
+
 #pMenuSublevelsl2 a.active{
   font-weight:bold;
 }
@@ -867,7 +919,7 @@ body {
 
 #BasketdetailedBoxbdy input[type="button"],
 #ShopContent .etBasket a,
-.page-custom  #ShopContent  input[type="submit"], 
+.page-custom  #ShopContent  input[type="submit"],
 .page-custom .order-page table td input[type="button"]{
   border:0;
   color:#fff;
@@ -1349,9 +1401,9 @@ body {
 	width: 225px !important ;
 }
 
-.page-custom .profile-page h3.customEdit, 
-.page-custom .account-statement  h3.customEdit, 
-.page-custom .order-page  h3.customEdit, 
+.page-custom .profile-page h3.customEdit,
+.page-custom .account-statement  h3.customEdit,
+.page-custom .order-page  h3.customEdit,
 .page-custom .favourite-page  h3.customEdit{
 	color: #222222;
 	font-size: 24px;
@@ -1492,7 +1544,7 @@ body {
 	background: none !important;
 }
 
-.page-custom .account-statement .HeaderBarTables tr:first-child, 
+.page-custom .account-statement .HeaderBarTables tr:first-child,
 .page-custom .order-page .HeaderBarTables tr:first-child{
 	display: none;
 }
@@ -1506,7 +1558,7 @@ body {
 }
 
 .page-custom .order-page  h3{
-	padding: 15px 0 20px 15px !important;	
+	padding: 15px 0 20px 15px !important;
 }
 
 .page-custom .order-page table {
@@ -1518,7 +1570,7 @@ body {
 	padding: 0 !important;
 }
 
-.page-custom .order-page table td, 
+.page-custom .order-page table td,
 .page-custom .order-page table td a{
 	color: #222222 !important;
 	font-family: Georgia !important;
@@ -1531,7 +1583,7 @@ body {
 	padding: 0;
 }
 
-.page-custom .order-page table td input[type="text"], 
+.page-custom .order-page table td input[type="text"],
 .page-custom .order-page table td select{
 	border: 1px solid #e1ded9 !important;
     width: 192px !important;
@@ -1547,7 +1599,7 @@ body {
 	width: 204px !important;
 }
 
-.page-custom .order-page table td input[type="button"], 
+.page-custom .order-page table td input[type="button"],
 .page-custom .order-page table td input[type="submit"]{
 	float: right;
 	margin: 30px 32px 20px 0 !important;
