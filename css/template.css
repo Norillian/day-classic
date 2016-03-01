@@ -511,6 +511,10 @@ body {
     padding: 10px;
 }
 
+.frontpage-cms .cms-content > div .cms-content-inner a {
+    padding: 0;
+}
+
 #contentCmstext > div .cms-content-inner {
     padding: 10px;
     min-height: 275px;
