@@ -967,6 +967,7 @@ body {
 
 .right-menu #BasketdetailedBoxbdy input[type="button"]{
   margin-bottom:15px;
+  cursor: pointer;
 }
 
 .page-custom  #ShopContent  input[type="submit"]{
