@@ -328,6 +328,31 @@
 
 /*** template container placements ***/
 
+* {
+	margin: 0;
+}
+
+html, body, form {
+	height: 100%;
+}
+
+#main {
+    min-height: 100% !important;
+    /* equal to footer height */
+    margin-bottom: -176px !important;
+}
+
+#main:after {
+    content: "";
+    display: block;
+    min-height: 176px;
+}
+
+#bottom, #bottom:after {
+  height: 176px;
+  min-height: 176px;
+}
+
 body {
     background-image: url('/images/editor/layout-images/body_bg.jpg') !important;
     background-repeat: repeat-x !important;
@@ -1503,9 +1528,7 @@ body {
   background:#fff !important;
   display:block;
   height:auto !important;
-  margin-top:10px;
   overflow:hidden;
-  min-height: 176px;
 }
 
 .bottom-container{
