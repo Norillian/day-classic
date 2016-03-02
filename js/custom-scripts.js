@@ -38,12 +38,24 @@ $(document).ready(function(){
       autoplaySpeed: 2500
   });
 
+  //deactivate input fields on edit customer
+  if($('#ShopContent.profile-page').length > 0) {
+      $('#ShopContent.profile-page table td input').prop('disabled', true);
+      $('#ShopContent.profile-page table td select').prop('disabled', true);
+      $('#ShopContent.profile-page table td input#ctl00_plhContent_txtPassword').prop('disabled', false);
+
+      $( "#ShopContent.profile-page h3" ).after( '<table style="margin-top:15px;"><tr><td>If something needs to be changed, please contact <a style="padding:0;display:inline-block;font-size: 14px;font-family: Georgia;font-weight:bold;" href="mailto:customerservice@day.dk">customerservice@day.dk</a></td></tr></table>' );
+  }
+
   //Remove specific links from productmenu
   $('#pMenuSublevelsbdy a:contains("Never Out Of Stock")').remove();
   $('#pMenuSublevelsbdy a:contains("DAY2DAY")').remove();
   $('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').parent().nextAll('li').remove();
   $('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').remove();
-  $('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').parent().nextAll('li').remove();
-  $('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').remove();
+  //$('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').parent().nextAll('li').remove();
+  //$('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').remove();
+
+  //Remove Favourites list from member menu
+  $('#memberMenubdy a[href="/products/Productlist.aspx?ProductListTypeID=2"]').parent().remove();
 
 });
