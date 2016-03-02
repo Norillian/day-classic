@@ -994,6 +994,13 @@ body {
 #main .plist560 .plistE6 .prelement{
   min-width:25% !important;
   width:25% !important;
+  position: relative;
+}
+
+#main .plist560 .plistE6 .prsi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .plistE6{
@@ -1293,6 +1300,13 @@ body {
 
 #ShopContent .product-img{
 	width: 60%;
+    position: relative;
+}
+
+#ShopContent .product-img #etIcons {
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 #ShopContent .product-content{

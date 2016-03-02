@@ -1,5 +1,24 @@
 <div class="product-detail">
   <div class="product-img" style="float: left">
+      <!-- Godt køb og Nyt produkt ikoner -->
+      <eSeller:If istrue="Product:ShowNewItemIcon">
+        <eSeller:IfOr istrue="Product:ShowGoodBuyIcon" />
+        <div id="etIcons">
+          <eSeller:Css Name="#etIconsArea" Selector="#etIcons" GroupName="#etgIcons" SelectorGroup="12" />
+          <eSeller:Css Name="#etIcons" Selector="#etIcons img" GroupName="#etgIcons" SelectorGroup="26" />
+          <eSeller:If istrue="Product:ShowNewItemIcon">
+            <eSeller:shopicon ControlID="imgNewProduct" shopicontype="NewProduct">
+              <eSeller:Attribute Name="ToolTip" text="label_new_product" />
+            </eSeller:shopicon>
+          </eSeller:If>
+          <eSeller:If istrue="Product:ShowGoodBuyIcon">
+            <eSeller:shopicon ControlID="imgGoodBuy" shopicontype="GoodBuy">
+              <eSeller:Attribute Name="ToolTip" text="label_good_buy" />
+            </eSeller:shopicon>
+          </eSeller:If>
+        </div>
+      </eSeller:If>
+      <!-- Slut på Godt køb og Nyt produkt ikoner -->
     <eSeller:Control ControlID="productimages" ControlType="ProductImages" />
     <eSeller:if istrue="Product:isAuction">
       <eSeller:Control ControlID="AuctionProperties" ControlType="AuctionProperties" />
@@ -47,7 +66,7 @@
 			<tr>
 			  <td class="etFavorites">
 				<eSeller:FavoritesButton ControlID="btnFavorites" >
-				  <eSeller:Attribute Name="ToolTip" text="tooltip_add_to_product_favorite" />   
+				  <eSeller:Attribute Name="ToolTip" text="tooltip_add_to_product_favorite" />
 				</eSeller:FavoritesButton>
 			  </td>
 			 </tr>
@@ -83,26 +102,6 @@
         <eSeller:Select text="label_composition" />&amp;nbsp;<eSeller:Select Value-Of="Product:CompositionDescription" />
       </div>
 
-    <!-- Godt køb og Nyt produkt ikoner -->
-    <eSeller:If istrue="Product:ShowNewItemIcon">
-      <eSeller:IfOr istrue="Product:ShowGoodBuyIcon" />
-      <div id="etIcons">
-        <eSeller:Css Name="#etIconsArea" Selector="#etIcons" GroupName="#etgIcons" SelectorGroup="12" />
-        <eSeller:Css Name="#etIcons" Selector="#etIcons img" GroupName="#etgIcons" SelectorGroup="26" />
-        <eSeller:If istrue="Product:ShowNewItemIcon">
-          <eSeller:shopicon ControlID="imgNewProduct" shopicontype="NewProduct">
-            <eSeller:Attribute Name="ToolTip" text="label_new_product" />
-          </eSeller:shopicon>
-        </eSeller:If>
-        <eSeller:If istrue="Product:ShowGoodBuyIcon">
-          <eSeller:shopicon ControlID="imgGoodBuy" shopicontype="GoodBuy">
-            <eSeller:Attribute Name="ToolTip" text="label_good_buy" />
-          </eSeller:shopicon>
-        </eSeller:If>
-      </div>
-    </eSeller:If>
-    <!-- Slut på Godt køb og Nyt produkt ikoner -->
-
     <eSeller:if isfalse="Product:isAuction">
       <eSeller:Css Name="#etStockStatusText" Selector="#etStockStatusText" GroupName="#etgStockStatus" SelectorGroup="12" />
       <eSeller:Css Name="#etStockStatusIcon" Selector="#etStockStatusText img" GroupName="#etgStockStatus" SelectorGroup="26" />
@@ -115,7 +114,7 @@
         <eSeller:Control ControlID="StockStatus" ControlType="StockStatus" />
       </div>
     </eSeller:if>
-	
+
 	<!--
 	<eSeller:HtmlElement TagName="input">
 	  <eSeller:Attribute Name="type" Value="button" />
@@ -149,14 +148,14 @@
   <eSeller:Control ControlID="manuflogo" ControlType="ManufacturerLogo" />
 </div>
 </div>
-  
-  
-  
+
+
+
 <div class="variants">
 <eSeller:Control ControlID="variants" ControlType="VariantSelector" />
 </div>
-  
-  
+
+
 <eSeller:If istrue="Settings:ShowAddToBasket">
 	<div class="etBasket">
 		<eSeller:BasketButton ControlID="btnBasket">
