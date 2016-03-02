@@ -44,7 +44,7 @@ $(document).ready(function(){
       $('#ShopContent.profile-page table td select').prop('disabled', true);
       $('#ShopContent.profile-page table td input#ctl00_plhContent_txtPassword').prop('disabled', false);
 
-      $( "#ShopContent.profile-page h3" ).after( '<table style="margin-top:15px;"><tr><td>If something needs to be changed, please contact <a style="padding:0;display:inline-block;font-size: 14px;font-family: Georgia;font-weight:bold;" href="mailto:customerservice@day.dk">customerservice@day.dk</a></td></tr></table>' );
+      $( "#ShopContent.profile-page h3" ).after( '<table style="margin-top:15px;"><tr><td>If something needs to be changed, please contact <a style="padding:0;display:inline-block;font-size: 14px;font-family: Georgia;font-weight:bold;" href="mailto:daycustomerservice@day.dk">Daycustomerservice@day.dk</a></td></tr></table>' );
   }
 
   //Remove specific links from productmenu
