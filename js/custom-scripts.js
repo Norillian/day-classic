@@ -38,4 +38,8 @@ $(document).ready(function(){
       autoplaySpeed: 2500
   });
 
+  //Remove specific links from productmenu
+  $('#pMenuSublevelsbdy a:contains("Never Out Of Stock")').remove();
+  $('#pMenuSublevelsbdy a:contains("DAY2DAY")').remove();
+
 });
