@@ -1273,8 +1273,8 @@ body {
   font-weight:normal !important;
 }
 
-.page-custom #precontentContainer{
-	/*display: none;*/
+.member-menus #precontentContainer {
+    display: none;
 }
 
 #layoutCmsbdy {
