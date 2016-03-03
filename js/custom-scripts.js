@@ -48,10 +48,11 @@ $(document).ready(function(){
   }
 
   //Remove specific links from productmenu
-  $('#pMenuSublevelsbdy a:contains("Never Out Of Stock")').remove();
-  $('#pMenuSublevelsbdy a:contains("DAY2DAY")').remove();
-  $('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').parent().nextAll('li').remove();
-  $('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').remove();
+  $('#pMenuSublevelsbdy a:contains("DAY Item")').parent().remove();
+  //$('#pMenuSublevelsbdy a:contains("Never Out Of Stock")').remove();
+  //$('#pMenuSublevelsbdy a:contains("DAY2DAY")').remove();
+  //$('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').parent().nextAll('li').remove();
+  //$('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').remove();
   //$('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').parent().nextAll('li').remove();
   //$('#pMenuSublevelsbdy a[href="/pl/2NDDAY-_16026.aspx"]').remove();
 

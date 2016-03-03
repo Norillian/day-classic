@@ -582,6 +582,7 @@ body {
 .basket-header{
   font-family:Georgia,serif;
   font-size:18px;
+  margin-bottom: 10px;
 }
 
 .basket-navigation{
@@ -623,6 +624,7 @@ body {
   border: medium none;
   padding: 0px 15px;
   height:34px;
+  cursor: pointer;
 }
 
 .basket-navigation-bottom .basket-clear input[type="button"],
@@ -885,13 +887,6 @@ body {
   font-size:14px;
   line-height:22px;
   text-transform:uppercase;
-}
-
-#pMenuSublevelsl1 li a:before,
-#pMenuSublevelsl1 li a:after,
-#pMenuToplevell0 li a:before,
-#pMenuToplevell0 li a:after{
-  content:'-';
 }
 
 #pMenuSublevelsl1 li a.active {
