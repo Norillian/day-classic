@@ -859,7 +859,7 @@ body {
 
 
 .left-menu h2.eseh2 {
-  font-size:17px;
+  font-size:22px;
   font-family:Georgia, serif;
 }
 
@@ -895,6 +895,15 @@ body {
 
 #pMenuSublevelsl2 a.active{
   font-weight:bold;
+}
+
+#pMenuSublevelsl2 {
+    margin: 2px 0 10px 0;
+}
+
+#pMenuSublevelsl2 li a {
+    color:#666;
+    font-size:12px;
 }
 
 /* Right Menu: Basket */
@@ -1319,6 +1328,7 @@ body {
 	color: #222222;
 	font-weight: bold;
 	font-size: 24px;
+    line-height: 24px;
 	padding: 0;
 	margin: 0 0 22px 0;
 	display: block !important;
@@ -1593,7 +1603,7 @@ body {
 	color: #222222 !important;
 	font-family: Georgia !important;
 	font-size: 14px !important;
-	padding: 0 0 13px 0 !important;
+	padding: 0 0 0px 0 !important;
 }
 
 .page-custom .HeaderBarTables  .HeaderBar {
