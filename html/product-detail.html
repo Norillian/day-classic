@@ -1,4 +1,15 @@
+<style>
+#layoutCmsbdy {
+display:none;
+}
+.go-back {
+font-family: Georgia, serif;
+font-size: 14px;
+}
+</style>
+
 <div class="product-detail">
+    <a class="go-back" href="javascript: history.go(-1)">&lt; Back</a>
   <div class="product-img" style="float: left">
       <!-- Godt køb og Nyt produkt ikoner -->
       <eSeller:If istrue="Product:ShowNewItemIcon">
@@ -11,11 +22,11 @@
               <eSeller:Attribute Name="ToolTip" text="label_new_product" />
             </eSeller:shopicon>
           </eSeller:If>
-          <eSeller:If istrue="Product:ShowGoodBuyIcon">
+          <!--<eSeller:If istrue="Product:ShowGoodBuyIcon">
             <eSeller:shopicon ControlID="imgGoodBuy" shopicontype="GoodBuy">
               <eSeller:Attribute Name="ToolTip" text="label_good_buy" />
             </eSeller:shopicon>
-          </eSeller:If>
+          </eSeller:If>-->
         </div>
       </eSeller:If>
       <!-- Slut på Godt køb og Nyt produkt ikoner -->

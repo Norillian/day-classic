@@ -48,7 +48,7 @@ $(document).ready(function(){
   }
 
   //Remove specific links from productmenu
-  $('#pMenuSublevelsbdy a:contains("DAY Item")').parent().remove();
+  $('#pMenuSublevelsbdy a:contains("DAY Item")').parent().addClass('hidden-menu-noos').hide();
   //$('#pMenuSublevelsbdy a:contains("Never Out Of Stock")').remove();
   //$('#pMenuSublevelsbdy a:contains("DAY2DAY")').remove();
   //$('#pMenuSublevelsbdy a[href="/pl/Day-_16016.aspx"]').parent().nextAll('li').remove();
@@ -58,5 +58,21 @@ $(document).ready(function(){
 
   //Remove Favourites list from member menu
   $('#memberMenubdy a[href="/products/Productlist.aspx?ProductListTypeID=2"]').parent().remove();
+
+  //when no products is available on the productlist show message
+  if($('#ShopContent .prelement').length === 0 && $('.brand-page').length === 0 && window.location.href.indexOf("/pl/") > -1) {
+      noProductsIsAvailable = $('<div></div>');
+      noProductsIsAvailable.addClass('noProductsIsAvailable');
+      noProductsIsAvailable.text('No products available right now.');
+      $('#ShopContent').append(noProductsIsAvailable);
+  }
+
+  //Create menus for hidden noos menu
+
+  if($('.hidden-menu-noos #pMenuSublevelsl2 li a.active').length > 0 && window.location.href.indexOf("/pl/") > -1) {
+      var getNoosMenu = $('.hidden-menu-noos #pMenuSublevelsl2 li a.active').parent().children('#pMenuSublevelsl3').clone();
+      getNoosMenu.removeAttr('id').addClass('brand-page-menu brand-menu-noos');
+      $('#precontentContainer').append(getNoosMenu);
+  }
 
 });
