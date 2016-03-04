@@ -405,6 +405,7 @@ body {
 
 #content > div.contentPane #ShopContent {
     background-color: #fff;
+    padding-bottom: 20px;
 }
 
 #content.member-menus > div.contentPane {
