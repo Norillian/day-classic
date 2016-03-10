@@ -1,4 +1,4 @@
-// For all the custom scripts on DAY
+// For all the custom scripts on DAY B2B
 $(document).ready(function(){
   // Define Profile Page
    if(window.location.href.indexOf("customer_edit") > -1) {
