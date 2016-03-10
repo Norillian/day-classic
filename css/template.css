@@ -888,6 +888,7 @@ body {
   font-size:14px;
   line-height:22px;
   text-transform:uppercase;
+  margin-bottom: 4px;
 }
 
 #pMenuSublevelsl1 li a.active {
@@ -1289,7 +1290,7 @@ body {
 }
 
 #main .plist560 .plistE6 .primg{
-  height:190px;
+  height:182px;
 }
 
 #main .prmain p{
@@ -1718,4 +1719,9 @@ body {
 	float: right;
 	margin: 30px 32px 20px 0 !important;
 	cursor: pointer;
+}
+
+.content.product-content #etStockStatusText,
+.content.product-content #etStockStatusProduct {
+    display:none;
 }
