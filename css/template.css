@@ -427,7 +427,7 @@ body {
 }
 
 .search-div {
-    width: 149px;
+    width: 182px;
     text-align: right;
 }
 
@@ -546,7 +546,7 @@ body {
 #contentCmstext > div .cms-content-inner h2 {
     color: #222222 !important;
     font-size: 24px !important;
-    font-family:Georgia,serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     margin: 0;
     padding: 15px 0 5px 0;
 }
@@ -554,14 +554,14 @@ body {
 #contentCmstext > div .cms-content-inner {
     color: #222222;
     font-size: 18px;
-    font-family:Georgia,serif;
+    font-family:'Open Sans', sans-serif;
     line-height: 24px;
 }
 
 #contentCmstext > div .cms-content-inner a {
     color: #222222 !important;
     font-size: 18px !important;
-    font-family:Georgia,serif !important;
+    font-family:'Open Sans', sans-serif !important;
     text-decoration: none !important;
     font-weight: bold;
     line-height: 24px;
@@ -581,7 +581,7 @@ body {
 /*** Basket step 1 ***/
 
 .basket-header{
-  font-family:Georgia,serif;
+  font-family:'Open Sans', sans-serif;
   font-size:18px;
   margin-bottom: 10px;
 }
@@ -648,7 +648,7 @@ body {
 #main #ShopContent .ec38TableTotals .c2,
 #main #ShopContent .ec64TableTotals .c1,
 #main #ShopContent .ec64TableTotals .c2{
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
 }
 
 .basket-step1 {
@@ -664,7 +664,7 @@ body {
     border: 0;
     color: #fff;
     display: inline-block;
-    font-family: Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
     height: 30px;
     margin: 10px 0px 0;
     text-transform: uppercase;
@@ -706,7 +706,7 @@ body {
 .basket-step5 .ec54Table .ec54Head th{
   background-color: #fff;
   border-bottom: solid 1px #f1f0f0;
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-weight: bold;
   color: #000000;
   font-size: 14px !important;
@@ -743,7 +743,7 @@ body {
     padding: 0;
     margin: 0 0 0px 0;
     display: block !important;
-    font-family: Georgia;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*** basket-step2 ***/
@@ -758,7 +758,7 @@ body {
     border: 0;
     color: #fff;
     display: inline-block;
-    font-family: Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
     height: 30px;
     margin: 10px 0px 0;
     text-transform: uppercase;
@@ -805,13 +805,13 @@ body {
 }
 
 .basket-delivery-header{
-  font-family:Georgia,serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-size:18px;
   margin:25px 0 10px;
 }
 
 .tblPaymentAddress td{
-  font-family:Georgia,serif !important;
+  font-family:'Open Sans', sans-serif !important;
 }
 
 .basket-order-remarks textarea{
@@ -861,7 +861,7 @@ body {
 
 .left-menu h2.eseh2 {
   font-size:22px;
-  font-family:Georgia, serif;
+  font-family:'Open Sans', sans-serif;
 }
 
 .star-menu{
@@ -884,7 +884,7 @@ body {
 #pMenuSublevelsl1 li a,
 #pMenuToplevell0 li a{
   color:#222222;
-  font-family:Georgia,serif;
+  font-family:'Open Sans', sans-serif;
   font-size:14px;
   line-height:22px;
   text-transform:uppercase;
@@ -916,7 +916,7 @@ body {
 
 #BasketdetailedBoxbdy,
 #BasketdetailedBoxbdy a{
-  font-family:Georgia, serif;
+  font-family:'Open Sans', sans-serif;
   font-size:12px;
 }
 
@@ -958,7 +958,7 @@ body {
 
 #BasketdetailedBoxbdy .footer .c1,
 #BasketdetailedBoxbdy .footer .c2{
-  font-family:Georgia, serif;
+  font-family:'Open Sans', sans-serif;
   font-size:14px;
   font-weight:bold;
 }
@@ -975,7 +975,7 @@ body {
   border:0;
   color:#fff;
   display:block;
-  font-family:Georgia, serif;
+  font-family:'Open Sans', sans-serif;
   height:30px;
   margin:15px 10px 0;
   text-transform: uppercase;
@@ -1012,7 +1012,7 @@ body {
     color: #222222;
     font-weight: bold;
     font-size: 13px;
-    font-family: Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #main .product-item .item > a {
@@ -1021,7 +1021,7 @@ body {
 }
 
 #main .product-item .item .item-price {
-    font-family: Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: normal;
     margin: 5px 0px 8px 0px;
@@ -1095,7 +1095,7 @@ body {
 #main.login-page .login-box #cmsLoginPage h1 {
     font-size: 22px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     margin: 10px 0 0px;
@@ -1114,7 +1114,7 @@ body {
 #customerLogin label {
     font-size: 16px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     line-height: 39px;
     display: block;
 }
@@ -1132,7 +1132,7 @@ body {
     margin: 0 8px 8px 0;
     font-size: 16px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     padding: 3px;
     background-color: #fff;
 }
@@ -1147,7 +1147,7 @@ body {
     border: medium none;
     font-size: 12px;
     color: #fff;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     padding: 0px;
     margin: 0px;
@@ -1172,7 +1172,7 @@ body {
 #customerLogin .button ul a {
     font-size: 14px;
     color: #4d4d4d;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     display: block;
     margin-top: 5px;
@@ -1181,7 +1181,7 @@ body {
 #ucInfoMessagebdy .error {
     font-size: 14px;
     color: #790101;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*** shopelements in toparea ***/
@@ -1202,7 +1202,7 @@ body {
     text-transform: uppercase;
     padding-top: 20px;
     display: block;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .right-top .ese71.ese {
@@ -1239,7 +1239,7 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     padding: 0px;
     display: block;
     width: 100%;
@@ -1260,7 +1260,7 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
     padding: 0px;
     margin: 10px 0 10px;
 }
@@ -1269,7 +1269,7 @@ body {
 #BasketdetailedBox .logicaordertypevalue {
     font-size: 12px;
     color: #222222;
-    font-family: Georgia Regular;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #BasketdetailedBox .logicaordertypevalue {
@@ -1285,7 +1285,7 @@ body {
 	color: #222222 !important;
 	font-weight: bold;
 	font-size: 13px  !important;
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
 	display: block;
 }
 
@@ -1296,7 +1296,7 @@ body {
 #main .prmain p{
   color:#222222 !important;
 	display: none;
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
 }
 
 #main .prbasket  .prbpri:first-child,
@@ -1306,7 +1306,7 @@ body {
 
 #main .plist560 .plistE6 .prbasket p{
   color:#222222;
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-size:13px !important;
   font-weight:normal !important;
 }
@@ -1323,7 +1323,7 @@ body {
     padding: 40px 0;
     text-align: center;
     color: #222222;
-    font-family: Georgia,serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     line-height: 22px;
 }
@@ -1368,7 +1368,7 @@ body {
 	padding: 0;
 	margin: 0 0 22px 0;
 	display: block !important;
-	font-family: Georgia;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #main  #ShopContent .product-content  div{
@@ -1388,7 +1388,7 @@ body {
 	font-size: 20px !important;
 	padding: 0 0 5px 0;
 	display: block;
-	font-family: Georgia !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 .product-detail{
@@ -1482,7 +1482,7 @@ body {
 	color: #222222 !important;
 	font-size: 14px !important;
 	padding: 0 0 6px 0 !important;
-	font-family: Georgia !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 .page-custom  .profile-page  table td.content strong{
 	padding: 15px 0 0 0;
@@ -1499,7 +1499,7 @@ body {
 	color: #222222;
 	font-size: 12px;
 	padding: 0 0 0 10px;
-	font-family: Georgia;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .page-custom  .profile-page  table td select{
@@ -1513,7 +1513,7 @@ body {
 	color: #222222;
 	font-size: 24px;
 	font-weight: normal;
-	font-family: Georgia;
+	font-family: 'Open Sans', sans-serif;
 	padding: 15px 0 0 15px;
 	margin: 0;
 	border: none;
@@ -1553,7 +1553,7 @@ body {
   background:#000;
   color:#fff !important;
   display:block;
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-size:11px;
   height:30px;
   line-height:30px;
@@ -1584,7 +1584,7 @@ body {
 }
 
 .must-have-header{
-  font-family:Georgia,serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-size:24px;
   margin:0 0 10px;
   text-transform: uppercase;
@@ -1606,7 +1606,7 @@ body {
 
 .list-item-name,
 .list-item-price{
-  font-family:Georgia, serif !important;
+  font-family:'Open Sans', sans-serif !important;
   font-size:13px !important;
 }
 
@@ -1637,20 +1637,20 @@ body {
 }
 
 #infoMenu1h2{
-  font-family:Georgia,serif;
+  font-family:'Open Sans', sans-serif;
   font-size:13px;
   font-weight:bold;
 }
 
 #infoMenu1l0 li a{
-  font-family:Georgia, serif;
+  font-family:'Open Sans', sans-serif;
   line-height:16px;
   padding:0;
 }
 
 .page-custom .HeaderBarTables td{
 	color: #222222 !important;
-	font-family: Georgia !important;
+	font-family: 'Open Sans', sans-serif !important;
 	font-size: 14px !important;
 	padding: 0 0 0px 0 !important;
 }
@@ -1688,7 +1688,7 @@ body {
 .page-custom .order-page table td,
 .page-custom .order-page table td a{
 	color: #222222 !important;
-	font-family: Georgia !important;
+	font-family: 'Open Sans', sans-serif !important;
 	font-size: 14px !important;
 	text-align: left !important;
 }
@@ -1707,7 +1707,7 @@ body {
     color: #222222;
     font-size: 12px;
     padding: 0 0 0 10px;
-    font-family: Georgia;
+    font-family: 'Open Sans', sans-serif;
 	margin: 0 0 4px 0;
 }
 .page-custom .order-page table td select{
