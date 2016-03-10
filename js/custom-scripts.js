@@ -42,7 +42,7 @@ $(document).ready(function(){
   if($('#ShopContent.profile-page').length > 0) {
       $('#ShopContent.profile-page table td input').prop('disabled', true);
       $('#ShopContent.profile-page table td select').prop('disabled', true);
-      $('#ShopContent.profile-page table td input#ctl00_plhContent_txtPassword').prop('disabled', false);
+      //$('#ShopContent.profile-page table td input#ctl00_plhContent_txtPassword').prop('disabled', false);
 
       $( "#ShopContent.profile-page h3" ).after( '<table style="margin-top:15px;"><tr><td>If something needs to be changed, please contact <a style="padding:0;display:inline-block;font-size: 14px;font-family: Georgia;font-weight:bold;" href="mailto:daycustomerservice@day.dk">Daycustomerservice@day.dk</a></td></tr></table>' );
   }
@@ -73,6 +73,15 @@ $(document).ready(function(){
       var getNoosMenu = $('.hidden-menu-noos #pMenuSublevelsl2 li a.active').parent().children('#pMenuSublevelsl3').clone();
       getNoosMenu.removeAttr('id').addClass('brand-page-menu brand-menu-noos');
       $('#precontentContainer').append(getNoosMenu);
+  }
+
+  //Create link for header on productmenu
+  if($('#pMenuSublevelsh2').length > 0) {
+
+      var getCurrentHeaderName = $('#pMenuSublevelsh2').text();
+      var getParentLink = $('#pMenuToplevell0 > li > a:contains("' + getCurrentHeaderName + '")').attr('href');
+      $( "#pMenuSublevelsh2" ).wrap('<a style="padding:0;" href="'+getParentLink+'"></a>');
+
   }
 
 });

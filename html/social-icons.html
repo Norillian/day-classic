@@ -31,7 +31,15 @@
 <script type="text/javascript">
 
     if($('.brand-access-div > input').hasClass('day')) {
-        $('.day-social-icons').addClass('active');
+
+        if($('#pMenuSublevelsh2').text() === "2NDDAY") {
+            if($('#pMenuSublevelsh2').length > 0) {
+                $('.2ndday-social-icons').addClass('active');
+            }
+        }
+        else {
+            $('.day-social-icons').addClass('active');
+        }
     }
     else {
         if($('.brand-access-div > input').hasClass('2ndday')) {
